@@ -1,0 +1,886 @@
+<div class="m-8 p-8 border-2 border-solid border-gray-300">
+<!-- component -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Loopple/loopple-public-assets@main/motion-tailwind/motion-tailwind.css" rel="stylesheet">
+    </head>
+    <body class="bg-white">    
+        <div class="container flex flex-col mx-auto bg-white">
+            <div class="relative flex flex-wrap items-center justify-between w-full bg-white group py-7 shrink-0">
+                <div>
+                    <img class="h-8" src="https://raw.githubusercontent.com/Loopple/loopple-public-assets/main/motion-tailwind/img/logos/logo-nav-0.png">
+                </div>
+                <div class="items-center justify-between hidden gap-12 text-black md:flex">
+                    <a class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900" href="javascript:void(0)">Product</a>
+                    <a class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900" href="javascript:void(0)">Features</a>
+                    <a class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900" href="javascript:void(0)">Pricing</a>
+                    <a class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900" href="javascript:void(0)">Company</a>
+                </div>
+                <div class="items-center hidden gap-8 md:flex">
+                    <button class="flex items-center text-sm font-normal text-gray-800 hover:text-gray-900 transition duration-300">Log In</button>
+                    <button class="flex items-center px-4 py-2 text-sm font-bold rounded-xl bg-purple-blue-100 text-purple-blue-600 hover:bg-purple-blue-600 hover:text-white transition duration-300">
+                        Sign Up
+                    </button>
+                </div>
+                <button onclick="(() => { this.closest('.group').classList.toggle('open')})()" class="flex md:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M3 8H21C21.2652 8 21.5196 7.89464 21.7071 7.70711C21.8946 7.51957 22 7.26522 22 7C22 6.73478 21.8946 6.48043 21.7071 6.29289C21.5196 6.10536 21.2652 6 21 6H3C2.73478 6 2.48043 6.10536 2.29289 6.29289C2.10536 6.48043 2 6.73478 2 7C2 7.26522 2.10536 7.51957 2.29289 7.70711C2.48043 7.89464 2.73478 8 3 8ZM21 16H3C2.73478 16 2.48043 16.1054 2.29289 16.2929C2.10536 16.4804 2 16.7348 2 17C2 17.2652 2.10536 17.5196 2.29289 17.7071C2.48043 17.8946 2.73478 18 3 18H21C21.2652 18 21.5196 17.8946 21.7071 17.7071C21.8946 17.5196 22 17.2652 22 17C22 16.7348 21.8946 16.4804 21.7071 16.2929C21.5196 16.1054 21.2652 16 21 16ZM21 11H3C2.73478 11 2.48043 11.1054 2.29289 11.2929C2.10536 11.4804 2 11.7348 2 12C2 12.2652 2.10536 12.5196 2.29289 12.7071C2.48043 12.8946 2.73478 13 3 13H21C21.2652 13 21.5196 12.8946 21.7071 12.7071C21.8946 12.5196 22 12.2652 22 12C22 11.7348 21.8946 11.4804 21.7071 11.2929C21.5196 11.1054 21.2652 11 21 11Z" fill="black"></path>
+                    </svg>
+                </button>
+                <div class="absolute flex md:hidden transition-all duration-300 ease-in-out flex-col items-start shadow-main justify-center w-full gap-3 overflow-hidden bg-white max-h-0 group-[.open]:py-4 px-4 rounded-2xl group-[.open]:max-h-64 top-full">
+                    <a class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900" href="javascript:void(0)">Product</a>
+                    <a class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900" href="javascript:void(0)">Features</a>
+                    <a class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900" href="javascript:void(0)">Pricing</a>
+                    <a class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900" href="javascript:void(0)">Company</a>
+                    <button class="flex items-center text-sm font-normal text-black">Log In</button>
+                    <button class="flex items-center px-4 py-2 text-sm font-bold rounded-xl bg-purple-blue-100 text-purple-blue-600 hover:bg-purple-blue-600 hover:text-white transition duration-300">Sign Up</button>
+                </div>
+            </div>
+            <div class="grid w-full grid-cols-1 my-auto mt-12 mb-8 md:grid-cols-2 xl:gap-14 md:gap-5">
+                <div class="flex flex-col justify-center col-span-1 text-center lg:text-start">
+                    <div class="flex items-center justify-center mb-4 lg:justify-normal">
+                        <img class="h-5" src="https://raw.githubusercontent.com/Loopple/loopple-public-assets/main/motion-tailwind/img/logos/logo-1.png" alt="logo">
+                        <h4 class="ml-2 text-sm font-bold tracking-widest text-primary uppercase">Explore the Latest Tailwind Template</h4>
+                    </div>
+                    <h1 class="mb-8 text-4xl font-extrabold leading-tight lg:text-6xl text-dark-grey-900">Elevate your website with Motion</h1>
+                    <p class="mb-6 text-base font-normal leading-7 lg:w-3/4 text-grey-900">
+                        Say goodbye to endless hours spent on building templates from scratch. Experience the quickest, most responsive, and trendiest dashboard solution available. Seriously.
+                    </p>
+                    <div class="flex flex-col items-center gap-4 lg:flex-row">
+                        <button class="flex items-center py-4 text-sm font-bold text-white px-7 bg-purple-blue-500 hover:bg-purple-blue-600 focus:ring-4 focus:ring-purple-blue-100 transition duration-300 rounded-xl">Get started now</button>
+                        <button class="flex items-center py-4 text-sm font-medium px-7 text-dark-grey-700 hover:text-dark-grey-900 transition duration-300 rounded-2xl">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 mr-2">
+                                <path fill-rule="evenodd" d="M1.5 4.5a3 3 0 013-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 01-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 006.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 011.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 01-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5z" clip-rule="evenodd"></path>
+                            </svg>
+                            Book a free call
+                        </button>
+                    </div>
+                </div>
+                <div class="items-center justify-end hidden col-span-1 md:flex">
+                    <img class="w-4/5 rounded-md" src="https://raw.githubusercontent.com/Loopple/loopple-public-assets/main/motion-tailwind/img/header-1.png" alt="header image">
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-wrap -mx-3 my-5">
+            <div class="w-full max-w-full sm:w-3/4 mx-auto text-center">
+                <p class="text-sm text-slate-500 py-1">
+                    Tailwind CSS Component from <a href="https://www.loopple.com/theme/motion-landing-library?ref=tailwindcomponents" class="text-slate-700 hover:text-slate-900" target="_blank">Motion Landing Library</a> by <a href="https://www.loopple.com" class="text-slate-700 hover:text-slate-900" target="_blank">Loopple Builder</a>.
+                </p>
+            </div>
+        </div>
+    </body>
+<html></div>
+  <!----------------------------------------------------------------------------------------------------------------------------e -->
+<div class="m-8 p-8 border-2 border-solid border-gray-300">
+<!-- component -->
+<!-- component -->
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+
+<!-- navbar -->
+<header class="absolute inset-x-0 top-0 z-50 py-6">
+    <div class="mx-auto lg:max-w-7xl w-full px-5 sm:px-10 md:px-12 lg:px-5">
+        <nav class="w-full flex justify-between gap-6 relative">
+            <!-- logo -->
+            <div class="min-w-max inline-flex relative">
+                <a href="/" class="relative flex items-center gap-3">
+                    <div class="relative w-7 h-7 overflow-hidden flex rounded-xl">
+                        <span class="absolute w-4 h-4 -top-1 -right-1 bg-green-500 rounded-md rotate-45"></span>
+                        <span class="absolute w-4 h-4 -bottom-1 -right-1 bg-[#FCDC58] rounded-md rotate-45"></span>
+                        <span class="absolute w-4 h-4 -bottom-1 -left-1 bg-blue-600 rounded-md rotate-45"></span>
+                        <span
+                            class="absolute w-2 h-2 rounded-full bg-gray-900 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"></span>
+                    </div>
+                    <div class="inline-flex text-lg font-semibold text-gray-900">
+                        AgenceX
+                    </div>
+                </a>
+            </div>
+
+            <div data-nav-overlay aria-hidden="true"
+                class="fixed hidden inset-0 lg:!hidden bg-gray-800/60 bg-opacity-50 backdrop-filter backdrop-blur-xl">
+            </div>
+            <div data-navbar
+                class="flex invisible opacity-0  translate-y-10 overflow-hidden lg:visible lg:opacity-100  lg:-translate-y-0 lg:scale-y-100 duration-300 ease-linear flex-col gap-y-6 gap-x-4 lg:flex-row w-full lg:justify-between lg:items-center absolute lg:relative top-full lg:top-0 bg-white lg:!bg-transparent border-x border-x-gray-100 lg:border-x-0">
+                <ul
+                    class="border-t border-gray-100  lg:border-t-0 px-6 lg:px-0 pt-6 lg:pt-0 flex flex-col lg:flex-row gap-y-4 gap-x-3 text-lg text-gray-700 w-full lg:justify-center lg:items-center">
+                    <li>
+                        <a href="#" class="duration-300 font-medium ease-linear hover:text-blue-600 py-3">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="duration-300 font-medium ease-linear hover:text-blue-600 py-3">
+                            Services
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="duration-300 font-medium ease-linear hover:text-blue-600 py-3">
+                            About us
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="duration-300 font-medium ease-linear hover:text-blue-600 py-3">
+                            Features
+                        </a>
+                    </li>
+                </ul>
+
+                <div
+                    class="lg:min-w-max flex items-center sm:w-max w-full pb-6 lg:pb-0 border-b border-gray-100   lg:border-0 px-6 lg:px-0">
+                    <a href="#"
+                        class="flex justify-center items-center w-full sm:w-max px-6 h-12 rounded-full outline-none relative overflow-hidden border duration-300 ease-linear
+                    after:absolute after:inset-x-0 after:aspect-square after:scale-0 after:opacity-70 after:origin-center after:duration-300 after:ease-linear after:rounded-full after:top-0 after:left-0 after:bg-[#172554] hover:after:opacity-100 hover:after:scale-[2.5] bg-blue-600 border-transparent hover:border-[#172554]">
+                        <span class="relative z-10 text-white">
+                            Get Started
+                        </span>
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="min-w-max flex items-center gap-x-3">
+
+                <button data-toggle-navbar data-is-open="false"
+                    class="lg:hidden lg:invisible outline-none w-7 h-auto flex flex-col relative">
+                    <span id="line-1"
+                        class="w-6 h-0.5 rounded-full bg-gray-700 transition-all duration-300 ease-linear"></span>
+                    <span id="line-2"
+                        class="w-6 origin-center  mt-1 h-0.5 rounded-ful bg-gray-700 transition-all duration-300 ease-linear"></span>
+                    <span id="line-3"
+                        class="w-6 mt-1 h-0.5 rounded-ful bg-gray-700 transition-all duration-300 ease-linear"></span>
+                    <span class="sr-only">togglenav</span>
+                </button>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<!-- hero section -->
+<section class="relative py-32 lg:py-36 bg-white">
+    <div
+        class="mx-auto lg:max-w-7xl w-full px-5 sm:px-10 md:px-12 lg:px-5 flex flex-col lg:flex-row gap-10 lg:gap-12">
+        <div class="absolute w-full lg:w-1/2 inset-y-0 lg:right-0 hidden lg:block">
+            <span
+                class="absolute -left-6 md:left-4 top-24 lg:top-28 w-24 h-24 rotate-90 skew-x-12 rounded-3xl bg-green-400 blur-xl opacity-60 lg:opacity-95 lg:block hidden"></span>
+            <span class="absolute right-4 bottom-12 w-24 h-24 rounded-3xl bg-blue-600 blur-xl opacity-80"></span>
+        </div>
+        <span
+            class="w-4/12 lg:w-2/12 aspect-square bg-gradient-to-tr from-blue-600 to-green-400 absolute -top-5 lg:left-0 rounded-full skew-y-12 blur-2xl opacity-40 skew-x-12 rotate-90"></span>
+        <div class="relative flex flex-col items-center text-center lg:text-left lg:py-7 xl:py-8 
+            lg:items-start lg:max-w-none max-w-3xl mx-auto lg:mx-0 lg:flex-1 lg:w-1/2">
+
+            <h1 class="text-3xl leading-tight sm:text-4xl md:text-5xl xl:text-6xl
+            font-bold text-gray-900">
+                Social Media <span
+                    class="text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-20% via-blue-600 via-30% to-green-600">Marketing</span>
+                is the Best Ever.
+            </h1>
+            <p class="mt-8 text-gray-700">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores repellat perspiciatis aspernatur
+                quis voluptatum porro incidunt,
+                libero sequi quos eos velit
+            </p>
+            <div class="mt-10  w-full flex max-w-md mx-auto lg:mx-0">
+                <div class="flex sm:flex-row flex-col gap-5 w-full">
+                    <form action="#"
+                        class="py-1 pl-6 w-full pr-1 flex gap-3 items-center text-gray-600 shadow-lg shadow-gray-200/20
+                            border border-gray-200 bg-gray-100 rounded-full ease-linear focus-within:bg-white  focus-within:border-blue-600">
+                        <span class="min-w-max pr-2 border-r border-gray-200">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" fill="none" viewBox="0 0 24 24"
+                                stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M21.75 9v.906a2.25 2.25 0 01-1.183 1.981l-6.478 3.488M2.25 9v.906a2.25 2.25 0 001.183 1.981l6.478 3.488m8.839 2.51l-4.66-2.51m0 0l-1.023-.55a2.25 2.25 0 00-2.134 0l-1.022.55m0 0l-4.661 2.51m16.5 1.615a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V8.844a2.25 2.25 0 011.183-1.98l7.5-4.04a2.25 2.25 0 012.134 0l7.5 4.04a2.25 2.25 0 011.183 1.98V19.5z" />
+                            </svg>
+                        </span>
+                        <input type="email" name="" id="" placeholder="johndoe@gmail.com"
+                            class="w-full py-3 outline-none bg-transparent">
+                        <button class="flex text-white justify-center items-center w-max min-w-max sm:w-max px-6 h-12 rounded-full outline-none relative overflow-hidden border duration-300 ease-linear
+                                after:absolute after:inset-x-0 after:aspect-square after:scale-0 after:opacity-70 after:origin-center after:duration-300 after:ease-linear after:rounded-full after:top-0 after:left-0 after:bg-[#172554] hover:after:opacity-100 hover:after:scale-[2.5] bg-blue-600 border-transparent hover:border-[#172554]">
+                            <span class="hidden sm:flex relative z-[5]">
+                                Get Started
+                            </span>
+                            <span class="flex sm:hidden relative z-[5]">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5" />
+                                </svg>
+                            </span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-1 lg:w-1/2 lg:h-auto relative lg:max-w-none lg:mx-0 mx-auto max-w-3xl">
+            <img src="https://agencex-astro.vercel.app/images/image1.webp" alt="Hero image" width="2350" height="2359"
+                class="lg:absolute lg:w-full lg:h-full rounded-3xl object-cover lg:max-h-none max-h-96">
+        </div>
+    </div>
+</section>
+<style>
+        body {
+            font-family: "Raleway", sans-serif;
+        }
+
+        button[data-toggle-navbar][data-is-open="true"] #line-1 {
+            transform: translateY(0.375rem) rotate(40deg);
+        }
+
+        button[data-toggle-navbar][data-is-open="true"] #line-2 {
+            transform: scaleX(0);
+            opacity: 0;
+        }
+
+        button[data-toggle-navbar][data-is-open="true"] #line-3 {
+            transform: translateY(-0.375rem) rotate(-40deg);
+        }
+</style>
+
+<script>
+const btnHumb = document.querySelector("[data-toggle-navbar]")
+const navbar = document.querySelector("[data-navbar]")
+const overlay = document.querySelector("[data-nav-overlay]")
+if (btnHumb && navbar) {
+    const toggleBtnAttr = () => {
+        const isOpen = btnHumb.getAttribute("data-is-open")
+        btnHumb.setAttribute("data-is-open", isOpen === "true" ? "false" : "true")
+        if (isOpen === "false") {
+            overlay.classList.toggle("hidden")
+        } else {
+            overlay.classList.add("hidden")
+        }
+    }
+    btnHumb.addEventListener("click", () => {
+        navbar.classList.toggle("invisible")
+        navbar.classList.toggle("opacity-0")
+        navbar.classList.toggle("translate-y-10")
+        toggleBtnAttr()
+    })
+
+    overlay.addEventListener("click", () => {
+        navbar.classList.add("invisible")
+        navbar.classList.add("opacity-0")
+        navbar.classList.add("translate-y-10")
+        toggleBtnAttr()
+    })
+}
+
+</script></div>
+  <!----------------------------------------------------------------------------------------------------------------------------e -->
+<div class="m-8 p-8 border-2 border-solid border-gray-300">
+<!-- component -->
+<section class="pb-12 bg-gradient-to-b from-[#E8E3F5] via-[#EDEAFB] to-[#F7FAFC]">
+                <div class="items-center pt-12 px-8 mx-auto max-w-7xl lg:px-16 md:px-12">
+                  <div class="justify-center w-full text-center lg:p-10 max-auto">
+                    <div class="justify-center w-full mx-auto">
+
+                    <div class="flex flex-col items-center justify-center max-w-xl gap-3 mx-auto lg:flex-row">
+                    <img
+                        class='w-32 h-32 rounded-full border border-[#E8E3F4]'
+                        src='https://i.pinimg.com/736x/97/f0/cb/97f0cb0bd91313be32a74ff14584d0f7.jpg'
+                    />
+                    </div>
+
+
+                    <p class="mt-4 sm:px-32 text-[#10172A] sm:text-xl text-sm font-semibold tracking-tighter">
+                       by @Coderinbay 🏝️
+                      </p>
+
+                      <p class="sm:mt-8 mt-3 sm:px-44 text-[#10172A] text-4xl sm:text-6xl font-semibold tracking-tighter">
+                       Failed <span class="underline leading-8 underline-offset-8	decoration-8 decoration-[#8B5CF6]">Products</span> Of Top Brands.
+                      </p>
+
+                      <p class="sm:mt-8 mt-2.5 text-[#10172A] sm:px-72  sm:leading-loose text-lg font-normal tracking-tighter">
+                      I'm a <span class="font-semibold">fullstack developer</span>, 9 - 9 <span class="font-semibold">remote</span> worker, community builder, and a <span class="font-semibold">solo</span> traveller. I love to build <span class="font-semibold">apps</span> that solve real life problems.
+                      </p>
+                    </div>
+                  </div>
+              
+                </div>
+           
+
+
+ <div class="text-center space-x-4 mt-6">
+  <button class="bg-[#8B5CF6] translate-y-1 text-[#fff] sm:text-lg text-xs font-bold py-2.5 px-6  rounded-full inline-flex items-center">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+  <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zM12.75 9a.75.75 0 00-1.5 0v2.25H9a.75.75 0 000 1.5h2.25V15a.75.75 0 001.5 0v-2.25H15a.75.75 0 000-1.5h-2.25V9z" clip-rule="evenodd" />
+</svg>
+
+
+    &nbsp; &nbsp;<span> Add A Product </span>
+  </button>
+</div>
+
+</section></div>
+  <!----------------------------------------------------------------------------------------------------------------------------e -->
+<div class="m-8 p-8 border-2 border-solid border-gray-300">
+<!-- component -->
+<!-- Hero -->
+<div class="relative overflow-hidden">
+  <!-- Gradients -->
+  <div aria-hidden="true" class="flex absolute -top-96 start-1/2 transform -translate-x-1/2">
+    <div class="bg-gradient-to-r from-violet-300/50 to-purple-100 blur-3xl w-[25rem] h-[44rem] rotate-[-60deg] transform -translate-x-[10rem] dark:from-violet-900/50 dark:to-purple-900"></div>
+    <div class="bg-gradient-to-tl from-blue-50 via-blue-100 to-blue-50 blur-3xl w-[90rem] h-[50rem] rounded-fulls origin-top-left -rotate-12 -translate-x-[15rem] dark:from-indigo-900/70 dark:via-indigo-900/70 dark:to-blue-900/70"></div>
+  </div>
+  <!-- End Gradients -->
+
+  <div class="relative z-10">
+    <div class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 py-10 lg:py-16">
+      <div class="max-w-2xl text-center mx-auto">
+        <p class="inline-block text-sm font-medium bg-clip-text bg-gradient-to-l from-blue-600 to-violet-500 text-transparent dark:from-blue-400 dark:to-violet-400">
+          Nano: A vision for 2024
+        </p>
+
+        <!-- Title -->
+        <div class="mt-5 max-w-2xl">
+          <h1 class="block font-semibold text-gray-800 text-4xl md:text-5xl lg:text-6xl dark:text-gray-200">
+            The Intuitive Web Solutions
+          </h1>
+        </div>
+        <!-- End Title -->
+
+        <div class="mt-5 max-w-3xl">
+          <p class="text-lg text-gray-600 dark:text-gray-400">Preline UI is an open-source set of prebuilt UI components, ready-to-use examples and Figma design system based on the utility-first Tailwind CSS framework.</p>
+        </div>
+
+        <!-- Buttons -->
+        <div class="mt-8 gap-3 flex justify-center">
+          <a class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="#">
+            Get started
+            <svg class="flex-shrink-0 w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+          </a>
+          <a class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-full border border-transparent text-gray-800 hover:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none dark:text-white dark:hover:bg-gray-700 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="#">
+            <svg class="flex-shrink-0 w-4 h-4" width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6.875 18C8.531 18 9.875 16.656 9.875 15V12H6.875C5.219 12 3.875 13.344 3.875 15C3.875 16.656 5.219 18 6.875 18Z" fill="#0ACF83"></path>
+              <path d="M3.875 9C3.875 7.344 5.219 6 6.875 6H9.875V12H6.875C5.219 12 3.875 10.656 3.875 9Z" fill="#A259FF"></path>
+              <path d="M3.875 3C3.875 1.344 5.219 0 6.875 0H9.875V6H6.875C5.219 6 3.875 4.656 3.875 3Z" fill="#F24E1E"></path>
+              <path d="M9.87501 0H12.875C14.531 0 15.875 1.344 15.875 3C15.875 4.656 14.531 6 12.875 6H9.87501V0Z" fill="#FF7262"></path>
+              <path d="M15.875 9C15.875 10.656 14.531 12 12.875 12C11.219 12 9.87501 10.656 9.87501 9C9.87501 7.344 11.219 6 12.875 6C14.531 6 15.875 7.344 15.875 9Z" fill="#1ABCFE"></path>
+            </svg>
+            Figma
+          </a>
+        </div>
+        <!-- End Buttons -->
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Hero --></div>
+  <!----------------------------------------------------------------------------------------------------------------------------e -->
+<div class="m-8 p-8 border-2 border-solid border-gray-300">
+<!-- component -->
+<section> 
+  <div class="container max-w-full mx-auto py-12 px-6">
+    <h1 class="text-center text-4xl text-black font-medium leading-snug tracking-wider">
+      Pricing
+    </h1>
+    <p class="text-center text-lg text-gray-700 mt-2 px-6">
+      Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.
+    </p>
+    <div class="h-1 mx-auto bg-indigo-200 w-24 opacity-75 mt-4 rounded"></div>
+
+    <div class="max-w-full md:max-w-6xl mx-auto my-3 md:px-8">
+      <div class="relative block flex flex-col md:flex-row items-center">
+        <div class="w-11/12 max-w-sm sm:w-3/5 lg:w-1/3 sm:my-5 my-8 relative z-0 rounded-lg shadow-lg md:-mr-4">
+          <div class="bg-white text-black rounded-lg shadow-inner shadow-lg overflow-hidden">
+            <div class="block text-left text-sm sm:text-md max-w-sm mx-auto mt-2 text-black px-8 lg:px-6">
+              <h1 class="text-lg font-medium uppercase p-3 pb-0 text-center tracking-wide">
+                Hobby
+              </h1>
+              <h2 class="text-sm text-gray-500 text-center pb-6">FREE</h2>
+
+              Stripe offers everything needed to run an online business at scale. Get in touch for details.
+            </div>
+
+            <div class="flex flex-wrap mt-3 px-6">
+              <ul>
+                <li class="flex items-center">
+                  <div class=" rounded-full p-2 fill-current text-green-700">
+                    <svg class="w-6 h-6 align-middle" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+			<path
+			d="M22 11.08V12a10 10 0 1 1-5.93-9.14"
+			></path>
+			<polyline
+			points="22 4 12 14.01 9 11.01"
+			></polyline>
+		</svg>
+                  </div>
+                  <span class="text-gray-700 text-lg ml-3">No setup</span
+	>
+</li>
+<li class="flex items-center">
+	<div
+	class=" rounded-full p-2 fill-current text-green-700"
+	>
+	<svg
+	class="w-6 h-6 align-middle"
+	width="24"
+	height="24"
+	viewBox="0 0 24 24"
+	fill="none"
+	stroke="currentColor"
+	stroke-width="2"
+	stroke-linecap="round"
+	stroke-linejoin="round"
+	>
+	<path
+	d="M22 11.08V12a10 10 0 1 1-5.93-9.14"
+	></path>
+	<polyline
+	points="22 4 12 14.01 9 11.01"
+	></polyline>
+</svg>
+</div>
+<span class="text-gray-700 text-lg ml-3"
+>No setups</span
+>
+                </li>
+                <li class="flex items-center">
+                  <div class=" rounded-full p-2 fill-current text-green-700">
+                    <svg class="w-6 h-6 align-middle" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+	<path
+	d="M22 11.08V12a10 10 0 1 1-5.93-9.14"
+	></path>
+	<polyline
+	points="22 4 12 14.01 9 11.01"
+	></polyline>
+</svg>
+                  </div>
+                  <span class="text-gray-700 text-lg ml-3">Speed</span>
+                </li>
+              </ul>
+            </div>
+            <div class="block flex items-center p-8  uppercase">
+              <button class="mt-3 text-lg font-semibold 
+	bg-black w-full text-white rounded-lg 
+	px-6 py-3 block shadow-xl hover:bg-gray-700">
+	Select
+</button>
+            </div>
+          </div>
+        </div>
+        <div class="w-full max-w-md sm:w-2/3 lg:w-1/3 sm:my-5 my-8 relative z-10 bg-white rounded-lg shadow-lg">
+          <div class="text-sm leading-none rounded-t-lg bg-gray-200 text-black font-semibold uppercase py-4 text-center tracking-wide">
+            Most Popular
+          </div>
+          <div class="block text-left text-sm sm:text-md max-w-sm mx-auto mt-2 text-black px-8 lg:px-6">
+            <h1 class="text-lg font-medium uppercase p-3 pb-0 text-center tracking-wide">
+              Expert
+            </h1>
+            <h2 class="text-sm text-gray-500 text-center pb-6"><span class="text-3xl">€19</span> /mo</h2>
+
+            Stripe offers everything needed to run an online business at scale. Get in touch for details.
+          </div>
+          <div class="flex pl-12 justify-start sm:justify-start mt-3">
+            <ul>
+              <li class="flex items-center">
+                <div class="rounded-full p-2 fill-current text-green-700">
+                  <svg class="w-6 h-6 align-middle" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+			<path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+			<polyline points="22 4 12 14.01 9 11.01"></polyline>
+		</svg>
+                </div>
+                <span class="text-gray-700 text-lg ml-3">No setup</span>
+              </li>
+              <li class="flex items-center">
+                <div class=" rounded-full p-2 fill-current text-green-700">
+                  <svg class="w-6 h-6 align-middle" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+	<path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+	<polyline points="22 4 12 14.01 9 11.01"></polyline>
+</svg>
+                </div>
+                <span class="text-gray-700 text-lg ml-3">Hidden fees</span
+>
+              </li>
+              <li class="flex items-center">
+                <div class=" rounded-full p-2 fill-current text-green-700">
+                  <svg class="w-6 h-6 align-middle" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+	<path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+	<polyline points="22 4 12 14.01 9 11.01"></polyline>
+</svg>
+                </div>
+                <span class="text-gray-700 text-lg ml-3">Original</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="block flex items-center p-8  uppercase">
+            <button class="mt-3 text-lg font-semibold 
+	bg-black w-full text-white rounded-lg 
+	px-6 py-3 block shadow-xl hover:bg-gray-700">
+	Select
+</button>
+          </div>
+        </div>
+        <div class="w-11/12 max-w-sm sm:w-3/5 lg:w-1/3 sm:my-5 my-8 relative z-0 rounded-lg shadow-lg md:-ml-4">
+          <div class="bg-white text-black rounded-lg shadow-inner shadow-lg overflow-hidden">
+            <div class="block text-left text-sm sm:text-md max-w-sm mx-auto mt-2 text-black px-8 lg:px-6">
+              <h1 class="text-lg font-medium uppercase p-3 pb-0 text-center tracking-wide">
+                Enterprise
+              </h1>
+              <h2 class="text-sm text-gray-500 text-center pb-6">€39 /mo</h2>
+
+              Stripe offers everything needed to run an online business at scale. Get in touch for details.
+            </div>
+            <div class="flex flex-wrap mt-3 px-6">
+              <ul>
+                <li class="flex items-center">
+                  <div class=" rounded-full p-2 fill-current text-green-700">
+                    <svg class="w-6 h-6 align-middle" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+			<path
+			d="M22 11.08V12a10 10 0 1 1-5.93-9.14"
+			></path>
+			<polyline
+			points="22 4 12 14.01 9 11.01"
+			></polyline>
+		</svg>
+                  </div>
+                  <span class="text-gray-700 text-lg ml-3">Electric</span
+	>
+</li>
+<li class="flex items-center">
+	<div
+	class=" rounded-full p-2 fill-current text-green-700"
+	>
+	<svg
+	class="w-6 h-6 align-middle"
+	width="24"
+	height="24"
+	viewBox="0 0 24 24"
+	fill="none"
+	stroke="currentColor"
+	stroke-width="2"
+	stroke-linecap="round"
+	stroke-linejoin="round"
+	>
+	<path
+	d="M22 11.08V12a10 10 0 1 1-5.93-9.14"
+	></path>
+	<polyline
+	points="22 4 12 14.01 9 11.01"
+	></polyline>
+</svg>
+</div>
+<span class="text-gray-700 text-lg ml-3"
+>Monthly</span
+>
+                </li>
+                <li class="flex items-center">
+                  <div class=" rounded-full p-2 fill-current text-green-700">
+                    <svg class="w-6 h-6 align-middle" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+	<path
+	d="M22 11.08V12a10 10 0 1 1-5.93-9.14"
+	></path>
+	<polyline
+	points="22 4 12 14.01 9 11.01"
+	></polyline>
+</svg>
+                  </div>
+                  <span class="text-gray-700 text-lg ml-3">No setup</span
+>
+                </li>
+              </ul>
+            </div>
+
+            <div class="block flex items-center p-8  uppercase">
+              <button class="mt-3 text-lg font-semibold 
+	bg-black w-full text-white rounded-lg 
+	px-6 py-3 block shadow-xl hover:bg-gray-700">
+	Select
+</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="pt-4">
+  <a href="https://twitter.com/framansi" target="_blank">
+  <div class="flex flex-row items-center justify-center">
+  <span class="text-center font-sans border-b-2 border-blue-200 hover:text-blue-200">@framansi  </span>
+    <svg class="h-5 px-2 cursor-pointer fill-current text-blue-200 hover:text-blue-300" viewBox="0 0 30 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M9.4344 24C20.7552 24 26.9472 14.7658 26.9472 6.75787C26.9472 6.49559 26.9472 6.23449 26.9292 5.97457C28.1338 5.11673 29.1736 4.05457 30 2.83781C28.8767 3.32788 27.685 3.64927 26.4648 3.79125C27.7497 3.03391 28.7113 1.84276 29.1708 0.439464C27.9626 1.14533 26.6408 1.64279 25.2624 1.91037C23.3545 -0.0869983 20.3229 -0.575862 17.8675 0.717909C15.4121 2.01168 14.1435 4.76633 14.7732 7.43721C9.82427 7.19294 5.21337 4.89156 2.088 1.1058C0.454347 3.87471 1.28879 7.41696 3.9936 9.19521C3.01409 9.16663 2.05594 8.90648 1.2 8.43672C1.2 8.46153 1.2 8.48752 1.2 8.51351C1.2008 11.3981 3.2661 13.8827 6.138 14.4539C5.23184 14.6972 4.2811 14.7327 3.3588 14.5578C4.16514 17.0264 6.47589 18.7175 9.1092 18.7662C6.92968 20.4526 4.23727 21.3681 1.4652 21.3654C0.975484 21.3644 0.486245 21.3352 0 21.2779C2.81476 23.0563 6.0899 23.9997 9.4344 23.9953" ></path>
+                                        </svg> 
+  </div>
+    </a>
+</footer></div>
+  <!----------------------------------------------------------------------------------------------------------------------------e -->
+<div class="m-8 p-8 border-2 border-solid border-gray-300">
+<!-- component -->
+<div class="container mx-auto p-4 lg:h-screen flex items-center justify-center">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <!-- Blog Entry 1 -->
+            <div class="max-w-sm mx-auto relative shadow-md rounded-lg cursor-pointer">
+              <img src="https://images.unsplash.com/photo-1516205651411-aef33a44f7c2?auto=format&fit=crop&q=80&w=1528&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Img by Meriç Dağlı https://unsplash.com/@meric" class="w-full h-auto object-cover rounded-lg">
+              <div class="absolute bottom-0 left-0 right-0 h-40 bg-black bg-opacity-50 backdrop-blur text-white p-4 rounded-b-lg">
+                <h1 class="text-2xl font-semibold">Nature Image</h1>
+                <p class="mt-2">This is a beautiful nature image placeholder. You can replace it with your own image.</p>
+              </div>
+            </div>
+
+            <!-- Blog Entry 2 -->
+            <div class="max-w-sm mx-auto relative shadow-md rounded-lg cursor-pointer">
+              <img src="https://images.unsplash.com/photo-1516205651411-aef33a44f7c2?auto=format&fit=crop&q=80&w=1528&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Img by Meriç Dağlı https://unsplash.com/@meric" class="w-full h-auto object-cover rounded-lg">
+              <div class="absolute bottom-0 left-0 right-0 h-40 bg-black bg-opacity-50 backdrop-blur text-white p-4 rounded-b-lg">
+                <h1 class="text-2xl font-semibold">Nature Image</h1>
+                <p class="mt-2">This is a beautiful nature image placeholder. You can replace it with your own image.</p>
+              </div>
+            </div>
+
+            <!-- Blog Entry 3 -->
+            <div class="max-w-sm mx-auto relative shadow-md rounded-lg cursor-pointer cursor-pointer">
+              <img src="https://images.unsplash.com/photo-1516205651411-aef33a44f7c2?auto=format&fit=crop&q=80&w=1528&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Img by Meriç Dağlı https://unsplash.com/@meric" class="w-full h-auto object-cover rounded-lg">
+              <div class="absolute bottom-0 left-0 right-0 h-40 bg-black bg-opacity-50 backdrop-blur text-white p-4 rounded-b-lg">
+                <h1 class="text-2xl font-semibold">Nature Image</h1>
+                <p class="mt-2">This is a beautiful nature image placeholder. You can replace it with your own image.</p>
+              </div>
+            </div>
+        </div>
+    </div></div>
+  <!----------------------------------------------------------------------------------------------------------------------------e -->
+<div class="m-8 p-8 border-2 border-solid border-gray-300">
+  <!-- Content goes here -->
+</div>
+  <!----------------------------------------------------------------------------------------------------------------------------e -->
+<div class="m-8 p-8 border-2 border-solid border-gray-300">
+  <!-- Content goes here -->
+</div>
+  <!----------------------------------------------------------------------------------------------------------------------------e -->
+<div class="m-8 p-8 border-2 border-solid border-gray-300">
+<!-- component -->
+<section class="text-blueGray-700 bg-white mt-20">
+    <div class="container flex flex-col items-center px-5 py-16 mx-auto md:flex-row lg:px-28">
+        <div class="flex flex-col items-start mb-16 text-left lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 md:mb-0">
+            <h2 class="mb-8 text-xs font-semibold tracking-widest text-black uppercase title-font"> Your tagline </h2>
+            <h1 class="mb-8 text-2xl font-black tracking-tighter text-black md:text-5xl title-font"> Medium length display headline. </h1>
+            <p class="mb-8 text-base leading-relaxed text-left text-blueGray-600 "> Deploy your mvp in minutes, not days. WT offers you a a wide selection swapable sections for your landing page. </p>
+            <div class="flex flex-col justify-center lg:flex-row">
+                <button class="flex items-center px-6 py-2 mt-auto font-semibold text-white transition duration-500 ease-in-out transform bg-blue-600 rounded-lg hover:bg-blue-700 focus:shadow-outline focus:outline-none focus:ring-2 ring-offset-current ring-offset-2"> Show me </button>
+                <p class="mt-2 text-sm text-left text-blueGray-600 md:ml-6 md:mt-0"> It will take you to candy shop. <br class="hidden lg:block">
+                <a href="#" class="inline-flex items-center font-semibold text-blue-600 md:mb-2 lg:mb-0 hover:text-black " title="read more"> Read more about it » </a>
+                </p>
+            </div>
+        </div>
+        <div class="w-full lg:w-1/3 lg:max-w-lg md:w-1/2">
+            <img class="object-cover object-center rounded-lg " alt="hero" src="https://dummyimage.com/720x600/F3F4F7/8693ac">
+        </div>
+    </div>
+</section>
+
+<section class="text-blueGray-700 bg-white mt-20">
+    <div class="container flex flex-col items-center px-5 py-16 mx-auto  md:flex-row lg:px-28">
+        <div class="flex flex-col items-start w-full pt-0 mb-16 text-left  lg:flex-grow md:w-1/2 xl:mr-20 md:pr-24 md:mb-0">
+        <h1 class="mb-8 text-2xl font-black tracking-tighter text-black  md:text-5xl title-font"> Medium length display headline. </h1>
+        <p class="mb-8 text-base leading-relaxed text-left text-blueGray-600"> Deploy your mvp in minutes, not days. WT offers you a a wide selection swapable sections for your landing page. </p>
+        <div class="flex flex-col w-full gap-2 md:justify-start md:flex-row">
+            <input class="flex-grow w-full px-4 py-3 mb-4 text-base text-black transition ease-in-out transform rounded-lg  duration-650 lg:w-auto bg-blueGray-200 focus:outline-none focus:border-purple-500 sm:mb-0 focus:bg-white focus:shadow-outline focus:ring-2 ring-offset-current ring-offset-2" placeholder="Your Email" type="email">
+            <button class="flex items-center px-6 py-3 mt-auto font-semibold text-white transition duration-500 ease-in-out transform bg-blue-600 rounded-lg  hover:bg-blue-700 focus:shadow-outline focus:outline-none focus:ring-2 ring-offset-current ring-offset-2"> Subscribe </button>
+        </div>
+        <p class="w-full mt-2 mb-8 text-sm text-left text-blueGray-600"> I got 99 problems and blocks ain't one. </p>
+        </div>
+        <div class="w-full lg:w-5/6 lg:max-w-lg md:w-1/2">
+        <img class="object-cover object-center rounded-lg" alt="hero" src="https://dummyimage.com/720x600/F3F4F7/8693ac">
+        </div>
+    </div>
+</section></div>
+  <!----------------------------------------------------------------------------------------------------------------------------e -->
+<div class="m-8 p-8 border-2 border-solid border-gray-300">
+<!-- component -->
+<div class="p-8">
+    <div class="bg-white p-4 rounded-lg shadow-xl py-8 mt-12">
+        <h4 class="text-4xl font-bold text-gray-800 tracking-widest uppercase text-center">FAQ</h4>
+        <p class="text-center text-gray-600 text-sm mt-2">Here are some of the frequently asked questions</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 xl:gap-12 px-2 xl:px-12 mt-4">
+            <div class="flex space-x-8 mt-8">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path d="M12 14l9-5-9-5-9 5 9 5z"></path>
+                        <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"></path>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"></path>
+                    </svg>
+                </div>
+                <div>
+                    <h4 class="text-xl font-bold text-gray-700">Lorem ipsum dolor sit amet?</h4>
+                    <p class="text-gray-600 my-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, dignissimos. Neque eos, dignissimos provident reiciendis debitis repudiandae commodi perferendis et itaque, similique fugiat cumque impedit iusto vitae dolorum. Nostrum, fugit!</p>
+                    <a href="#" class="text-blue-600 hover:text-blue-800 hover:underline capitalize" title="Read More">Read More</a>
+                </div>
+            </div>
+            
+            <div class="flex space-x-8 mt-8">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                    </svg>
+                </div>
+                <div>
+                    <h4 class="text-xl font-bold text-gray-700">Consectetur adipisicing elit?</h4>
+                    <p class="text-gray-600 my-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, dignissimos. Neque eos, dignissimos provident reiciendis debitis repudiandae commodi perferendis et itaque, similique fugiat cumque impedit iusto vitae dolorum. Nostrum, fugit!</p>
+                    <a href="#" class="text-blue-600 hover:text-blue-800 hover:underline capitalize" title="Read More">Read More</a>
+                </div>
+            </div>
+
+            <div class="flex space-x-8 mt-8">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"></path>
+                        </svg>
+                </div>
+                <div>
+                    <h4 class="text-xl font-bold text-gray-700">Neque eos, dignissimos provident reiciendis debitis?</h4>
+                    <p class="text-gray-600 my-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, dignissimos. Neque eos, dignissimos provident reiciendis debitis repudiandae commodi perferendis et itaque, similique fugiat cumque impedit iusto vitae dolorum. Nostrum, fugit!</p>
+                    <a href="#" class="text-blue-600 hover:text-blue-800 hover:underline capitalize" title="Read More">Read More</a>
+                </div>
+            </div>
+
+            <div class="flex space-x-8 mt-8">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"></path>
+                    </svg>
+                </div>
+                <div>
+                    <h4 class="text-xl font-bold text-gray-700">Repudiandae commodi perferendis et itaque?</h4>
+                    <p class="text-gray-600 my-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, dignissimos. Neque eos, dignissimos provident reiciendis debitis repudiandae commodi perferendis et itaque, similique fugiat cumque impedit iusto vitae dolorum. Nostrum, fugit!</p>
+                    <a href="#" class="text-blue-600 hover:text-blue-800 hover:underline capitalize" title="Read More">Read More</a>
+                </div>
+            </div>
+
+            <div class="flex space-x-8 mt-8">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"></path>
+                    </svg>
+                </div>
+                <div>
+                    <h4 class="text-xl font-bold text-gray-700">Similique fugiat cumque?</h4>
+                    <p class="text-gray-600 my-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, dignissimos. Neque eos, dignissimos provident reiciendis debitis repudiandae commodi perferendis et itaque, similique fugiat cumque impedit iusto vitae dolorum. Nostrum, fugit!</p>
+                    <a href="#" class="text-blue-600 hover:text-blue-800 hover:underline capitalize" title="Read More">Read More</a>
+                </div>
+            </div>
+
+            <div class="flex space-x-8 mt-8">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 4v16M17 4v16M3 8h4m10 0h4M3 12h18M3 16h4m10 0h4M4 20h16a1 1 0 001-1V5a1 1 0 00-1-1H4a1 1 0 00-1 1v14a1 1 0 001 1z"></path>
+                    </svg>
+                </div>
+                <div>
+                    <h4 class="text-xl font-bold text-gray-700">Impedit iusto vitae dolorum, nostrum fugit?</h4>
+                    <p class="text-gray-600 my-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, dignissimos. Neque eos, dignissimos provident reiciendis debitis repudiandae commodi perferendis et itaque, similique fugiat cumque impedit iusto vitae dolorum. Nostrum, fugit!</p>
+                    <a href="#" class="text-blue-600 hover:text-blue-800 hover:underline capitalize" title="Read More">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div></div>
+  <!----------------------------------------------------------------------------------------------------------------------------e -->
+<div class="m-8 p-8 border-2 border-solid border-gray-300">
+<!-- component -->
+<footer class="bg-white dark:bg-gray-900">
+    <div class="container px-6 py-12 mx-auto">
+        <div class="text-center">
+            <h2 class="text-2xl font-semibold text-gray-800 dark:text-white">Let’s get started on something great</h2>
+
+            <p class="max-w-md mx-auto mt-2 text-gray-500 dark:text-gray-400">Join over 4,000+ startups already growing with Meraki UI.</p>
+
+            <div class="flex flex-col mt-6 sm:flex-row sm:items-center sm:justify-center">
+                <button class="w-full px-5 py-2 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-600 rounded-md sm:mx-2 sm:order-2 sm:w-auto hover:bg-blue-500 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-80">Get started</button>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-2 gap-6 mt-12 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6">
+            <div>
+                <h3 class="text-sm font-medium text-gray-500 dark:text-gray-400">Product</h3>
+
+                <div class="flex flex-col items-start mt-4 space-y-4">
+                    <a href="#" class="text-gray-700 transition-colors duration-200 dark:text-gray-200 dark:hover:text-blue-400 hover:underline hover:text-blue-600">Overview</a>
+                    <a href="#" class="text-gray-700 transition-colors duration-200 dark:text-gray-200 dark:hover:text-blue-400 hover:underline hover:text-blue-600">Features</a>
+                    <a href="#" class="text-gray-700 transition-colors duration-200 dark:text-gray-200 dark:hover:text-blue-400 hover:underline hover:text-blue-600">Solutions</a>
+                    <a href="#" class="text-gray-700 transition-colors duration-200 dark:text-gray-200 dark:hover:text-blue-400 hover:underline hover:text-blue-600">Tutorials</a>
+                    <a href="#" class="text-gray-700 transition-colors duration-200 dark:text-gray-200 dark:hover:text-blue-400 hover:underline hover:text-blue-600">Pricing</a>
+                    <a href="#" class="text-gray-700 transition-colors duration-200 dark:text-gray-200 dark:hover:text-blue-400 hover:underline hover:text-blue-600">Releases</a>
+                </div>
+            </div>
+
+            <div>
+                <h3 class="text-sm font-medium text-gray-500 dark:text-gray-400">Company</h3>
+
+                <div class="flex flex-col items-start mt-4 space-y-4">
+                    <a href="#" class="text-gray-700 transition-colors duration-200 dark:text-gray-200 dark:hover:text-blue-400 hover:underline hover:text-blue-600">About us</a>
+                    <a href="#" class="text-gray-700 transition-colors duration-200 dark:text-gray-200 dark:hover:text-blue-400 hover:underline hover:text-blue-600">Careers</a>
+                    <a href="#" class="text-gray-700 transition-colors duration-200 dark:text-gray-200 dark:hover:text-blue-400 hover:underline hover:text-blue-600">Press</a>
+                    <a href="#" class="text-gray-700 transition-colors duration-200 dark:text-gray-200 dark:hover:text-blue-400 hover:underline hover:text-blue-600">News</a>
+                    <a href="#" class="text-gray-700 transition-colors duration-200 dark:text-gray-200 dark:hover:text-blue-400 hover:underline hover:text-blue-600">Media kit</a>
+                    <a href="#" class="text-gray-700 transition-colors duration-200 dark:text-gray-200 dark:hover:text-blue-400 hover:underline hover:text-blue-600">Contact</a>
+                </div>
+            </div>
+
+            <div>
+                <h3 class="text-sm font-medium text-gray-500 dark:text-gray-400">Resources</h3>
+
+                <div class="flex flex-col items-start mt-4 space-y-4">
+                    <a href="#" class="text-gray-700 transition-colors duration-200 dark:text-gray-200 dark:hover:text-blue-400 hover:underline hover:text-blue-600">Blog</a>
+                    <a href="#" class="text-gray-700 transition-colors duration-200 dark:text-gray-200 dark:hover:text-blue-400 hover:underline hover:text-blue-600">Newsletter</a>
+                    <a href="#" class="text-gray-700 transition-colors duration-200 dark:text-gray-200 dark:hover:text-blue-400 hover:underline hover:text-blue-600">Events</a>
+                    <a href="#" class="text-gray-700 transition-colors duration-200 dark:text-gray-200 dark:hover:text-blue-400 hover:underline hover:text-blue-600">Help center</a>
+                    <a href="#" class="text-gray-700 transition-colors duration-200 dark:text-gray-200 dark:hover:text-blue-400 hover:underline hover:text-blue-600">Tutorials</a>
+                    <a href="#" class="text-gray-700 transition-colors duration-200 dark:text-gray-200 dark:hover:text-blue-400 hover:underline hover:text-blue-600">Supports</a>
+                </div>
+            </div>
+
+            <div>
+                <h3 class="text-sm font-medium text-gray-500 dark:text-gray-400">Use cases</h3>
+
+                <div class="flex flex-col items-start mt-4 space-y-4">
+                    <a href="#" class="text-gray-700 transition-colors duration-200 dark:text-gray-200 dark:hover:text-blue-400 hover:underline hover:text-blue-600">Startups</a>
+                    <a href="#" class="text-gray-700 transition-colors duration-200 dark:text-gray-200 dark:hover:text-blue-400 hover:underline hover:text-blue-600">Enterprise</a>
+                    <a href="#" class="text-gray-700 transition-colors duration-200 dark:text-gray-200 dark:hover:text-blue-400 hover:underline hover:text-blue-600">Government</a>
+                    <a href="#" class="text-gray-700 transition-colors duration-200 dark:text-gray-200 dark:hover:text-blue-400 hover:underline hover:text-blue-600">Saas</a>
+                    <a href="#" class="text-gray-700 transition-colors duration-200 dark:text-gray-200 dark:hover:text-blue-400 hover:underline hover:text-blue-600">Marketplaces</a>
+                    <a href="#" class="text-gray-700 transition-colors duration-200 dark:text-gray-200 dark:hover:text-blue-400 hover:underline hover:text-blue-600">Ecommerce</a>
+                </div>
+            </div>
+
+            <div>
+                <h3 class="text-sm font-medium text-gray-500 dark:text-gray-400">Social</h3>
+
+                <div class="flex flex-col items-start mt-4 space-y-4">
+                    <a href="#" class="text-gray-700 transition-colors duration-200 dark:text-gray-200 dark:hover:text-blue-400 hover:underline hover:text-blue-600">Twitter</a>
+                    <a href="#" class="text-gray-700 transition-colors duration-200 dark:text-gray-200 dark:hover:text-blue-400 hover:underline hover:text-blue-600">LinkedIn</a>
+                    <a href="#" class="text-gray-700 transition-colors duration-200 dark:text-gray-200 dark:hover:text-blue-400 hover:underline hover:text-blue-600">Github</a>
+                    <a href="#" class="text-gray-700 transition-colors duration-200 dark:text-gray-200 dark:hover:text-blue-400 hover:underline hover:text-blue-600">Facebook</a>
+                    <a href="#" class="text-gray-700 transition-colors duration-200 dark:text-gray-200 dark:hover:text-blue-400 hover:underline hover:text-blue-600">AngelList</a>
+                    <a href="#" class="text-gray-700 transition-colors duration-200 dark:text-gray-200 dark:hover:text-blue-400 hover:underline hover:text-blue-600">Dribble</a>
+                </div>
+            </div>
+
+            <div>
+                <h3 class="text-sm font-medium text-gray-500 dark:text-gray-400">Legal</h3>
+
+                <div class="flex flex-col items-start mt-4 space-y-4">
+                    <a href="#" class="text-gray-700 transition-colors duration-200 dark:text-gray-200 dark:hover:text-blue-400 hover:underline hover:text-blue-600">Terms</a>
+                    <a href="#" class="text-gray-700 transition-colors duration-200 dark:text-gray-200 dark:hover:text-blue-400 hover:underline hover:text-blue-600">Privacy</a>
+                    <a href="#" class="text-gray-700 transition-colors duration-200 dark:text-gray-200 dark:hover:text-blue-400 hover:underline hover:text-blue-600">Cookies</a>
+                    <a href="#" class="text-gray-700 transition-colors duration-200 dark:text-gray-200 dark:hover:text-blue-400 hover:underline hover:text-blue-600">Licenses</a>
+                    <a href="#" class="text-gray-700 transition-colors duration-200 dark:text-gray-200 dark:hover:text-blue-400 hover:underline hover:text-blue-600">Settings</a>
+                    <a href="#" class="text-gray-700 transition-colors duration-200 dark:text-gray-200 dark:hover:text-blue-400 hover:underline hover:text-blue-600">Contact</a>
+                </div>
+            </div>
+        </div>
+        
+        <hr class="my-6 border-gray-200 md:my-10 dark:border-gray-700">
+        
+        <div class="flex flex-col items-center justify-between sm:flex-row">
+            <a href="#">
+                <img class="w-auto h-7" src="https://merakiui.com/images/full-logo.svg" alt="">
+            </a>
+
+            <p class="mt-4 text-sm text-gray-500 sm:mt-0 dark:text-gray-300">© Copyright 2023. All Rights Reserved.</p>
+        </div>
+    </div>
+</footer></div>
+  <!----------------------------------------------------------------------------------------------------------------------------e -->
